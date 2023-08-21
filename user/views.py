@@ -90,7 +90,6 @@ def createProfil(request):
             profil.owner = request.user
             profil.save()
             messages.success(request, "Profil Oluşturuldu")
-            print("Merhaba")
             return redirect('profiles')
     context = {
         'form' : form
